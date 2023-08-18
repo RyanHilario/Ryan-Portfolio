@@ -1,0 +1,124 @@
+/* ============= GOOGLE FONTS ============= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+	--header-height: 3rem;
+
+	/* ============= Cores ============= */
+	--matriz-cor: 250; /* Roxo 250 - Verde 142 - Azul 230 - Rosa 340 */
+
+	--primeira-cor: hsl(var(--matriz-cor), 69%, 61%);
+	--primeira-cor-secundaria: hsl(var(--matriz-cor), 69%, 61%);
+	--primeira-cor-alternativa: hsl(var(--matriz-cor), 57%, 53%);
+	--primeira-cor-clara: hsl(var(--matriz-cor), 92%, 85%);
+	--titulo-cor: hsl(var(--matriz-cor), 8%, 15%);
+	--texto-cor: hsl(var(--matriz-cor), 8%, 45%);
+	--texto-cor-clara: hsl(var(--matriz-cor), 8%, 65%);
+	--input-cor: hsl(var(--matriz-cor), 70%, 96%);
+	--body-cor: hsl(var(--matriz-cor), 60%, 99%);
+	--container-cor: #FFF;
+
+	/* ============= Fontes e tipografia ============= */
+	--body-fonte: 'Poppins', sans-serif;
+
+	/* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+	--fonte-grande: 2rem;
+	--fonte-h1: 1.5rem;
+	--fonte-h2: 1.25rem;
+	--fonte-h3: 1.125rem;
+	--fonte-normal: .938rem;
+	--fonte-pequena: .813rem;
+	--fonte-menor: .75rem;
+
+	/* Fonte weight */
+	--fonte-bold: 500;
+	--fonte-semi-bold: 600;
+
+	/* ============= Margin Bottom =============*/
+	--mb-0-25: 0.25rem;
+	--mb-0-5: 0.5rem;
+	--mb-0-75: 0.75rem;
+	--mb-1: 1rem;
+	--mb-1-5: 1.5rem;
+	--mb-2: 2rem;
+	--mb-2-5: 2.5rem;
+	--mb-3: 3rem;
+
+	/* ============= z index ============= */
+	--z-tooltip: 10;
+	--z-fixed: 100;
+	--z-modal: 100;
+
+	/* Tamanho da fonte para screens grandes */
+}
+
+@media screen and (min-width: 968px) {
+	:root {
+		--fonte-grande: 3rem;
+		--fonte-h1: 2.25rem;
+		--fonte-h2: 1.5rem;
+		--fonte-h3: 1.25rem;
+		--fonte-normal: 1rem;
+		--fonte-pequena: .875rem;
+		--fonte-menor: .813rem;
+	}
+}
+
+
+/* ============= BASE ============= */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0 0 var(--header-height) 0;
+	font-family: var(--body-fonte);
+	font-size: var(--fonte-normal);
+	background-color: var(--body-cor);
+	color: var(--texto-cor);
+}
+
+h1, h2, h3, h4 {
+	color: var(--titulo-cor);
+	font-weight: var(--fonte-semi-bold);
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* ============= CLASSES CSS REUSÁVEIS ============= */
+.section {
+	padding: 2rem 0 4rem;
+}
+
+.section__title {
+	font-size: var(--fonte-h1);
+}
+
+.section__subtitle {
+	display: block;
+	font-size: var(--fonte-pequena);
+	margin-bottom: var(--mb-3);
+}
+
+.section__title, 
+.section__subtitle {
+	text-align: center;
+}
