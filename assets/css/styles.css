@@ -26,7 +26,7 @@
 	--fonte-h1: 1.5rem;
 	--fonte-h2: 1.25rem;
 	--fonte-h3: 1.125rem;
-	--fonte-normal: .938rem;
+	--fonte-media: .938rem;
 	--fonte-pequena: .813rem;
 	--fonte-menor: .75rem;
 
@@ -58,7 +58,7 @@
 		--fonte-h1: 2.25rem;
 		--fonte-h2: 1.5rem;
 		--fonte-h3: 1.25rem;
-		--fonte-normal: 1rem;
+		--fonte-media: 1rem;
 		--fonte-pequena: .875rem;
 		--fonte-menor: .813rem;
 	}
@@ -79,7 +79,7 @@ html {
 body {
 	margin: 0 0 var(--header-height) 0;
 	font-family: var(--body-fonte);
-	font-size: var(--fonte-normal);
+	font-size: var(--fonte-media);
 	background-color: var(--body-cor);
 	color: var(--texto-cor);
 }
@@ -134,4 +134,97 @@ img {
 .grid {
 	display: grid;
 	gap: 1.5rem;
+}
+
+.header {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: var(--z-fixed);
+	background-color: var(--body-cor);
+}
+
+
+/* ============= NAV ============= */
+.nav {
+	max-width: 968px;
+	height: var(--header-height);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav__logo,
+.nav__toggle {
+	color: var(--titulo-cor);
+	font-weight: var(--fonte-bold);
+}
+
+.nav__logo:hover {
+	color: var(--primeira-cor);
+}
+
+.nav__toggle {
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+
+.nav__toggle:hover {
+	color: var(--primeira-cor);
+}
+
+@media screen and (max-width: 767px) {
+	.nav__menu {
+		position: fixed;
+		bottom: -100%;
+		left: 0;
+		width: 100%;
+		background-color: var(--body-cor);
+		padding: 2rem 1.5rem 4rem;
+		box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+		border-radius: 1.5rem 1.5rem 0 0;
+		transition: .3s;
+	}
+}
+
+.nav__list {
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+}
+
+.nav__link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: var(--fonte-pequena);
+	color: var(--titulo-cor);
+	font-weight:var(--fonte-bold);
+}
+
+.nav__link:hover {
+	color: var(--primeira-cor);
+}
+
+.nav__icon {
+	font-size: 1.2rem;
+}
+
+.nav__close {
+	position: absolute;
+	right: 1.3rem;
+	bottom: .5rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: var(--primeira-cor);
+}
+
+.nav__close:hover {
+	color: var(--primeira-cor-alternativa);
+}
+
+
+/* ============= MOSTRANDO/OCULTANDO MENU ============= */
+.show-menu {
+	bottom: 0;
 }
