@@ -224,7 +224,34 @@ img {
 }
 
 
-/* ============= MOSTRANDO/OCULTANDO MENU ============= */
+/* Mostrar menu */
 .show-menu {
 	bottom: 0;
+}
+
+
+/* ============= HOME ============= */
+.home__container {
+	gap: 1rem;
+}
+
+.home__content {
+	grid-template-columns: .5fr 3fr;
+	padding-top: 3.5rem;
+	align-items: center;
+}
+
+.home__social {
+	display: grid;
+	grid-template-columns: max-content;
+	row-gap: 1rem;
+}
+
+.home__social-icon {
+	font-size: 1.25rem;
+	color: var(--primeira-cor);
+}
+
+.home__social-icon:hover {
+	color: var(--primeira-cor-alternativa);
 }
