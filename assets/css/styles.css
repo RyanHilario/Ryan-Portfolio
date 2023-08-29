@@ -255,3 +255,16 @@ img {
 .home__social-icon:hover {
 	color: var(--primeira-cor-alternativa);
 }
+
+.home__blob {
+	width: 200px;
+	fill: var(--primeira-cor);
+}
+
+.home__blob-img {
+	width: 200px;
+}
+
+.home__data {
+	grid-column: 1/3;
+}
