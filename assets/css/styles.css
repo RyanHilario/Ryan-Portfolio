@@ -304,10 +304,35 @@ img {
 .home__scroll-name {
 	font-size: var(--fonte-pequena);
 	color: var(--titulo-cor);
-	font-weight: var(--fonte-media);
+	font-weight: var(--fonte-normal);
 	margin-right: var(--mb-0-25);
 }
 
 .home__scroll-arrow {
 	font-size: 1.25rem;
+}
+
+/* ============= BOTÕES ============= */
+.button {
+	display: inline-block;
+	background-color: var(--primeira-cor);
+	color: #FFF;
+	padding: 1rem;
+	border-radius: .5rem;
+	font-weight: var(--fonte-normal);
+}
+
+.button:hover {
+	background-color: var(--primeira-cor-alternativa);
+}
+
+.button__icon {
+	font-size: 1.25rem;
+	margin-left: var(--mb-0-5);
+	transition: .3s;
+}
+
+.button--flex {
+	display: inline-flex;
+	align-items: center;
 }
