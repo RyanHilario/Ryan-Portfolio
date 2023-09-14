@@ -312,6 +312,7 @@ img {
 	font-size: 1.25rem;
 }
 
+
 /* ============= BOTÕES ============= */
 .button {
 	display: inline-block;
@@ -336,6 +337,7 @@ img {
 	display: inline-flex;
 	align-items: center;
 }
+
 
 /* ============= SOBRE ============= */
 .about__img {
@@ -378,5 +380,6 @@ img {
 }
 
 
+/* ============= HABILIDADES ============= */
 
 
