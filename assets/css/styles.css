@@ -380,6 +380,24 @@ img {
 }
 
 
-/* ============= HABILIDADES ============= */
+/* ============= CONHECIMENTOS ============= */
+.skills__container {
+	row-gap: 0;
+}
 
+.skills__header {
+	display: flex;
+	align-items: center;
+	margin-bottom: var(--mb-2-5);
+	cursor: pointer;
+}
 
+.skills__icon,
+.skills__arrow {
+	font-size: 2rem;
+	color: var(--primeira-cor);
+}
+
+.skills__icon {
+	margin-right: var(--mb-0-75);
+}
