@@ -401,3 +401,12 @@ img {
 .skills__icon {
 	margin-right: var(--mb-0-75);
 }
+
+.skills__title {
+	font-size: var(--fonte-h3);
+}
+
+.skills__subtitle {
+	font-size: var(--fonte-pequena);
+	color: var(--texto-cor-clara);
+}
