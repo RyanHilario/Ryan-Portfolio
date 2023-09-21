@@ -410,3 +410,28 @@ img {
 	font-size: var(--fonte-pequena);
 	color: var(--texto-cor-clara);
 }
+
+.skills__arrow {
+	margin-left: auto;
+	transition: .4s;
+}
+
+.skills__list {
+	row-gap: 1.5rem;
+	padding-left: 2.7rem;
+}
+
+.skills__titles {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: var(--mb-0-5);
+}
+
+.skills__name {
+	font-size: var(--fonte-normal);
+	align-self: center;
+}
+
+.skills__logo {
+	font-size: 1.4rem;
+}
