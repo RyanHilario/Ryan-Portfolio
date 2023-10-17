@@ -455,3 +455,61 @@ img {
 
 
 /* ============= SERVIÇOS = qualification ============= */
+.qualification__tabs {
+	display: flex;
+	justify-content: space-evenly;
+	mask-border: var(--mb-2);
+}
+
+.qualification__button {
+	font-size: var(--fonte-h3);
+	font-weight: var(--fonte-normal);
+	cursor: pointer;
+}
+
+.qualification__button:hover {
+	color: var(--primeira-cor);
+}
+
+.qualification__icon {
+	font-size: 1.8rem;
+	margin: var(--mb-0-25);
+}
+
+.qualification__data {
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+	column-gap: 1.5rem;
+}
+
+.qualification__title {
+	font-size: var(--fonte-media);
+	font-weight: var(--fonte-normal);
+}
+
+.qualification__subtitle {
+	display: inline-block;
+	font-size: var(--fonte-pequena);
+	margin-bottom: var(--mb-1);
+}
+
+.qualification__calendar {
+	font-size: var(--fonte-pequena);
+	color: var(--texto-cor-clara);
+}
+
+.qualification__rounder {
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background-color: var(--primeira-cor);
+	border-radius: 50%;
+}
+
+.qualification__line {
+	display: block;
+	width: 1px;
+	height: 100%;
+	background-color: var(--primeira-cor);
+	transform: translate(6px, -7px);
+}
