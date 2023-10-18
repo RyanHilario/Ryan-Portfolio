@@ -316,12 +316,12 @@
 			<div class="qualification__container container">
 				<div class="qualification__tabs">
 					
-					<div class="qualification__button buttons--flex">
+					<div class="qualification__button buttons--flex qualification__active" data-target="#education">
 						<i class="uil uil-graduation-cap qualification__icon"></i>
 						Estudos
 					</div>
 
-					<div class="qualification__button buttons--flex">
+					<div class="qualification__button buttons--flex" data-target="#work">
 						<i class="uil uil-briefcase-alt qualification__icon"></i>
 						Trabalhos
 					</div>
@@ -329,8 +329,9 @@
 				</div>
 
 				<div class="qualification__sections">
-				<!-- ============= SERVIÇOS CONTEÚDO 1 ============= -->
-					<div class="qualification__content">
+
+					<!-- ============= SERVIÇOS CONTEÚDO 1 (Estudos) ============= -->
+					<div class="qualification__content qualification__active" data-content id="education">
 
 					<!-- ============= SERVIÇOS 1 ============= -->
 						<div class="qualification__data">
@@ -349,53 +350,13 @@
 								<span class="qualification__line"></span>
 							</div>
 						</div>
-
-					<!-- ============= SERVIÇOS 2 ============= -->
-						<div class="qualification__data">
-							<div></div>
-
-							<div>
-								<span class="qualification__rounder"></span>
-								<span class="qualification__line"></span>
-							</div>
-
-							<div>
-								<h3 class="qualification__title">Desenvolvedor Front-End</h3>
-								<span class="qualification__subtitle">Orion Digital Commerce Consulting</span>
-								<div class="qualification__calendar">
-									<i class="uil uil-calendar-alt"></i>
-									2022 - 2023
-								</div>
-							</div>
-
-
-						</div>
-
 					</div>
 
 					
-				<!-- ============= SERVIÇOS CONTEÚDO 2 ============= -->
-					<div class="qualification__content">
+					<!-- ============= SERVIÇOS CONTEÚDO 2 (Trabalhos) ============= -->
+					<div class="qualification__content" data-content id="work">
 
 					<!-- ============= SERVIÇOS 1 ============= -->
-						<div class="qualification__data">
-							
-							<div>
-								<h3 class="qualification__title">Administration, Business and Marketing</h3>
-								<span class="qualification__subtitle">ETEC - Escola Técnica Estadual de São Paulo</span>
-								<div class="qualification__calendar">
-									<i class="uil uil-calendar-alt"></i>
-									2016 - 2018
-								</div>
-							</div>
-
-							<div>
-								<span class="qualification__rounder"></span>
-								<span class="qualification__line"></span>
-							</div>
-						</div>
-
-					<!-- ============= SERVIÇOS 2 ============= -->
 						<div class="qualification__data">
 							<div></div>
 

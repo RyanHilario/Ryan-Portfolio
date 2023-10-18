@@ -458,7 +458,7 @@ img {
 .qualification__tabs {
 	display: flex;
 	justify-content: space-evenly;
-	mask-border: var(--mb-2);
+	margin-bottom: var(--mb-2);
 }
 
 .qualification__button {
@@ -508,8 +508,20 @@ img {
 
 .qualification__line {
 	display: block;
-	width: 1px;
+	width: 2px;
 	height: 100%;
 	background-color: var(--primeira-cor);
-	transform: translate(6px, -7px);
+	transform: translate(5.4px, -7px);
+}
+
+.qualification [data-content] {
+	display: none;
+}
+
+.qualification__active[data-content] {
+	display: block;
+}
+
+.qualification__button.qualification__active {
+	color: var(--primeira-cor);
 }
