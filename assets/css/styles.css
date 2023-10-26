@@ -350,7 +350,7 @@ img {
 
 .button--link:hover {
 	background-color: transparent;
-	box-shadow: 0 1px 8px rgba(0, 0, 0, .15);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
 }
 
 
@@ -594,8 +594,8 @@ img {
 	justify-content: center;
 	padding: 0 1rem;
 	z-index: var(--z-modal);
-	/* opacity: 0; */
-	/* visibility: hidden; */
+	opacity: 0;
+	visibility: hidden;
 	transition: .3s;
 }
 
@@ -604,4 +604,38 @@ img {
 	background-color: var(--container-cor);
 	padding: 1.5rem;
 	border-radius: .5rem;
+}
+
+.services__modal-services {
+	row-gap: 1rem;
+}
+
+.services__modal-service {
+	display: flex;
+}
+
+.services__modal-title {
+	font-size: var(--fonte-h3);
+	font-weight: var(--fonte-normal);
+	margin-bottom: var(--mb-1-5);
+}
+
+.services__modal-close {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 1.5rem;
+	color: var(--primeira-cor);
+	cursor: pointer;
+}
+
+.services__modal-icon {
+	color: var(--primeira-cor);
+	margin-right: var(--mb-0-25);
+}
+
+/* Modulo de ativação */
+.active-modal {
+	opacity: 1;
+	visibility: visible;
 }
