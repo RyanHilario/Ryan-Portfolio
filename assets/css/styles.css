@@ -338,6 +338,21 @@ img {
 	align-items: center;
 }
 
+.button--small {
+	padding: .75rem 1rem;
+}
+
+.button--link {
+	padding: 3px 10px;
+	background-color: transparent;
+	color: var(--primeira-cor);
+}
+
+.button--link:hover {
+	background-color: transparent;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, .15);
+}
+
 
 /* ============= SOBRE ============= */
 .about__img {
@@ -550,4 +565,43 @@ img {
 	font-size: 1.5rem;
 	color: var(--primeira-cor);
 	margin-bottom: var(--mb-1);
+}
+
+.services__title {
+	font-size: var(--fonte-h3);
+	margin-bottom: var(--mb-1);
+	font-weight: var(--fonte-normal);
+}
+
+.services__button {
+	cursor: pointer;
+	font-size: var(--fonte-pequena);
+}
+
+.services__button:hover .button__icon {
+	transform: translateX(0.25rem);
+}
+
+.services__modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 1rem;
+	z-index: var(--z-modal);
+	/* opacity: 0; */
+	/* visibility: hidden; */
+	transition: .3s;
+}
+
+.services__modal-content {
+	position: relative;
+	background-color: var(--container-cor);
+	padding: 1.5rem;
+	border-radius: .5rem;
 }
