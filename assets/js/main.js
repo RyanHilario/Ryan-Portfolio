@@ -70,7 +70,7 @@ tabs.forEach(tab => {
 })
 
 
-// ============= PORTFÓLIO(services) GUIAS =============
+// ============= SERVIÇOS GUIAS =============
 const modalViews = document.querySelectorAll(".services__modal");
 const modalButtons = document.querySelectorAll(".services__button");
 const modalCloses = document.querySelectorAll(".services__modal-close");
